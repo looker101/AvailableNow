@@ -11,5 +11,5 @@
 :disguised_face:
 ## Capire come effettuare l'aggiornamento del file.  
   Scarica il file da Matrixify filtrando per tag "available now"  
-  Scarica da focus il file dei prodotti in magazzino
+  Scarica da focus il file dei prodotti in magazzino  
   **POI....**
