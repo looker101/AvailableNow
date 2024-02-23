@@ -1,5 +1,7 @@
 **Creazione file Disponibile subito**
 
+__gianni__
+
 1. Export da Focus del file degli articoli nella filiale I: Report > Magazzino > Solo Giacienze
 2. Export da Matrixify del brand da comparare con il file di focus (si può usare i file dello scraping)
 3. Nel file main.py, inserire il nome del file di Shopify che si vuole comparare col Focus per ottenere un file con i prodotti disponibili in magazzino
