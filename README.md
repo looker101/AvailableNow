@@ -9,7 +9,7 @@
 6. Dopo aver ottenuto il file Concat_File.xlsx, esegui il file availableNow.py e ottieni il file finale da importare su Matrixfy
 
 :disguised_face:
-## Capire come effettuare l'aggiornamento del file.
+## Capire come effettuare l'aggiornamento del file.  
   Scarica il file da Matrixify filtrando per tag "available now"
   Scarica da focus il file dei prodotti in magazzino
   **POI....**
