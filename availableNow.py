@@ -6,7 +6,7 @@ df = pd.read_excel("Concat_File.xlsx")
 #print(df.columns)
 
 def finalFile():
-    df[["Variant Inventory Qty", "Inventory Available: +39 05649689443"]] = 5
+    df[["Variant Inventory Qty", "Inventory Available: +39 05649689443"]] = 1
     df["Template Suffix"] = "disponibili-subito"
     df["Tags"] = df["Tags"].apply(lambda x : x + ", available now")
     # SCONTO
