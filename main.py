@@ -1,43 +1,44 @@
 import pandas as pd
-# scarica da matrixfy il file di ogni brand (oppure utilizza i file excel dello scraping)
-# compara il file del brand col file di focus
-# otterrai un file con tutti i prodotti in comune. Questi sono i prodotti disponibili subito di quel brand
+import os
 
-# INSERISCI QUI L'INPUT!!!!
-# Inserire come il brand come vedi anche nel file brand.txt
-brand = str(input("Inserisci il brand: "))
+# Percorso della cartella dove sono situati i file dei brand e dove salvare i risultati
+path_brand = "C:\\Users\\miche\\Desktop\\.py\\DisponibiliSubito\\Brand\\"
+path_ok = "C:\\Users\\miche\\Desktop\\.py\\DisponibiliSubito\\FileOK\\"
 
-# Inserisco il percorso da dove prendere il file del brand
-path = "C:\\Users\\miche\\Desktop\\.py\\DisponibiliSubito\\Brand\\"
+# Percorso del file Disponibili_subito_Focus.xlsx
+path_focus = "Disponibili_subito_Focus.xlsx"
 
-try:
-    def disponibiliSubito():
-        shopify = pd.read_excel(path+brand+".xlsx")
-        focus = pd.read_excel("Disponibili_subito_Focus.xlsx")
+# Carica il file Disponibili_subito_Focus.xlsx una sola volta, fuori dal ciclo
+focus = pd.read_excel(path_focus)
+focus.rename(columns={"Codice a barre":"Variant Barcode"}, inplace=True)
+focus["Variant Barcode"] = focus["Variant Barcode"].astype(str)
 
-        # colonne barcode
-        focus.rename(columns={"Codice a barre":"Variant Barcode"}, inplace=True)
+# Lista di tutti i file .xlsx nella cartella 'brand', escludendo il file Disponibili_subito_Focus.xlsx se presente
+files_brand = [f for f in os.listdir(path_brand) if f.endswith('.xlsx') and f != "Disponibili_subito_Focus.xlsx"]
 
-        # merge
-        test = shopify.merge(focus, on="Variant Barcode", how="left", indicator=True)
-        mask = test["_merge"] == "both"
-        check = test[mask]
+def disponibiliSubito(file_brand):
+    shopify = pd.read_excel(os.path.join(path_brand, file_brand))
+    shopify["Variant Barcode"] = shopify["Variant Barcode"].astype(str)
+    
+    # merge
+    test = shopify.merge(focus[['Variant Barcode', 'Quantità magazzino']], on="Variant Barcode", how="left", indicator=True)
+    test["Inventory Available: +39 05649689443"] = test["Quantità magazzino"]
+    mask = test["_merge"] == "both"
+    check = test[mask]
 
-        check = check[[
-        "ID", "Handle", "Command", "Title", "Body HTML", "Vendor", "Type", "Tags", "Tags Command", "Created At",
-            "Updated At", "Status", "Published", "Published At", "Template Suffix", "URL", "Variant ID",
-            "Variant SKU", "Variant Barcode", "Variant Price", "Variant Compare At Price", "Variant Inventory Qty",
-            "Variant Inventory Adjust", "Inventory Available: +39 05649689443"
-        ]]
+    check = check[[
+    "ID", "Handle", "Command", "Title", "Body HTML", "Vendor", "Type", "Tags", "Tags Command", "Created At",
+        "Updated At", "Status", "Published", "Published At", "Template Suffix", "URL", "Variant ID",
+        "Variant SKU", "Variant Barcode", "Variant Price", "Variant Compare At Price", "Variant Inventory Qty",
+        "Variant Inventory Adjust", "Inventory Available: +39 05649689443"
+    ]]
 
-        #check["Template Suffix"] = ""
+    # Salva il risultato nella cartella FileOK con lo stesso nome del file di origine
+    check.to_excel(os.path.join(path_ok, file_brand), index=False)
 
-        check.to_excel("C:\\Users\\miche\\Desktop\\.py\\DisponibiliSubito\\FileOK\\"+brand+".xlsx", index=False)
-
-    if __name__ == "__main__":
-        disponibiliSubito()
-        print("File salvato nella cartella \"FileDisponibili\"")
-    else:
-        print("")
-except FileNotFoundError as err:
-    print("Hey, Mimmo!! Non hai inserito il file Matrixify!!!")
+for file_brand in files_brand:
+    try:
+        disponibiliSubito(file_brand)
+        print(f"File {file_brand} salvato nella cartella \"FileOK\"")
+    except Exception as e:
+        print(f"Errore durante l'elaborazione del file {file_brand}: {e}")
