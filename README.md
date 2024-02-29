@@ -1,6 +1,6 @@
 :cowboy_hat_face:
 # **Creazione file Disponibile subito**
-:crocodile:
+:crocodile: | :whale2:	
 ---
 + Export da Focus del file degli articoli nella filiale I: Report > Magazzino > Solo Giacienze. Inseriscila nella cartella disponibili subito e rinomina il file "Disponibili_subito_Focus"
 + Usa i file dei brand aggiornati che si trovano nella cartella "ok" dello scraping e inseriscili qui: "C:\Users\miche\Desktop\.py\DisponibiliSubito\Brand". Utilizza quelli all'interno della cartella più recente. 
