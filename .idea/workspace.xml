@@ -5,42 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e294af16-7fd1-4c4a-9133-d9fe60dfd87c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AvailableNow.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/AvailableNow.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/adidas_originals.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/amq.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/arnette.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/balenciaga.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/bottega.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/burberry.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/chloe.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/emporio.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/giorgio.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/gucci.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/guess.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/miu.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/moncler.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/oakley.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/oakleySnow.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/persol.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/prada.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/rayban.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/rudyProject.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/saintLaurent.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/swarovski.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/tiffany.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/timberland.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/tommy.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/versace.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brand/vogue.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concat_File.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Concat_File.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Disponibili_subito_Focus.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Disponibili_subito_Focus.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileOK/bottega.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/availableNow.py" beforeDir="false" afterPath="$PROJECT_DIR$/availableNow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concat.py" beforeDir="false" afterPath="$PROJECT_DIR$/concat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/focus_compare.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvailableNow.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concat_File.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Disponibili_subito_Focus.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
