@@ -1,15 +1,10 @@
 :cowboy_hat_face:
 # **Creazione file Disponibile subito**
 
-1. Export da Focus del file degli articoli nella filiale I: Report > Magazzino > Solo Giacienze
-2. Export da Matrixify del brand da comparare con il file di focus (si può usare i file dello scraping)
-3. Nel file main.py, inserire il nome del file di Shopify che si vuole comparare col Focus per ottenere un file con i prodotti disponibili in magazzino
-4. Salva il file con il nome del brand che ha controllato e ripeti l'operazione per tutti i brand che vuoi controllare
-5. Con il file concat.py concatena tutti i  file dei brand fino ad ottenre un file con tutti gli articoli disponibili subito
-6. Dopo aver ottenuto il file Concat_File.xlsx, esegui il file availableNow.py e ottieni il file finale da importare su Matrixfy
-
-:disguised_face:
-## Capire come effettuare l'aggiornamento del file.  
-  Scarica il file da Matrixify filtrando per tag "available now"  
-  Scarica da focus il file dei prodotti in magazzino  
-  **POI....**
+1. Export da Focus del file degli articoli nella filiale I: Report > Magazzino > Solo Giacienze. Inseriscila nella cartella disponibili subito e rinomina il file "Disponibili_subito_Focus"
+2. Usa i file dei brand aggiornati che si trovano nella cartella "ok" dello scraping e inseriscili qui: "C:\Users\miche\Desktop\.py\DisponibiliSubito\Brand". Utilizza quelli all'interno della cartella più recente. 
+3. Il file focus compare prende i file dei brand nella cartella Brand e lo confronta con il file Disponibili_subito_Focus. Viene generato un file per ogni brand con gli articoli che corrispondono al file del focus.
+4. Esegui il file concat.py: Queso programma concatena tutti i files presenti nella cartella fileOK, creando un unico file.
+5. Esegui il file availableNow. Il file sostituirà il template esistente con "disponibili-subito" in modo che i prodotti nel file abbiano il corretto template
+6. Il file availableNow aggiungerà anche il tag "available-now" ad ogni articolo.
+7. Verrà generato il file AvailableNow.xlsx che dovrà essere importato su Shopify attraverso Matrixify

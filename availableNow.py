@@ -10,7 +10,7 @@ def finalFile():
     #brand_file[["Variant Inventory Qty", "Inventory Available: +39 05649689443"]] = 1
     brand_file["Template Suffix"] = "disponibili-subito"
     brand_file["Tags"] = brand_file["Tags"].apply(lambda x : x + ", available now")
-    brand_file["Variant Inventory Qty"] = brand_file["Inventory Available: +39 05649689443"]
+    #brand_file["Variant Inventory Qty"] = brand_file["Inventory Available: +39 05649689443"]
     # SCONTO
     #def discount(prezzo):
     #    return round(prezzo * 0.80)

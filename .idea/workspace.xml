@@ -4,11 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e294af16-7fd1-4c4a-9133-d9fe60dfd87c" name="Changes" comment="" />
+    <list default="true" id="e294af16-7fd1-4c4a-9133-d9fe60dfd87c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvailableNow.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/AvailableNow.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/adidas_originals.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/amq.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/arnette.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/balenciaga.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/bottega.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/burberry.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/chloe.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/emporio.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/giorgio.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/gucci.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/guess.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/miu.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/moncler.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/oakley.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/oakleySnow.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/persol.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/prada.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/rayban.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/rudyProject.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/saintLaurent.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/swarovski.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/tiffany.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/timberland.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/tommy.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/versace.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brand/vogue.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concat_File.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Concat_File.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Disponibili_subito_Focus.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Disponibili_subito_Focus.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileOK/bottega.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/availableNow.py" beforeDir="false" afterPath="$PROJECT_DIR$/availableNow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concat.py" beforeDir="false" afterPath="$PROJECT_DIR$/concat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/focus_compare.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -24,20 +68,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/miche/Desktop/.py/catalog_price/brand&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.availableNow.executor": "Run",
+    "Python.concat.executor": "Run",
+    "Python.focus_compare (1).executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.mainTest.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/miche/Desktop/.py/DisponibiliSubito"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;Markdown&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Markdown"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Python.availableNow">
     <configuration name="availableNow" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DisponibiliSubito" />
@@ -61,7 +110,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="concat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DisponibiliSubito" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -74,7 +123,73 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/concat.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="focus_compare (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DisponibiliSubito" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/focus_compare.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="focus_compare" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="DisponibiliSubito" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\miche\Desktop\.py\DisponibiliSubito\focus_compare.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mainTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DisponibiliSubito" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mainTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -86,6 +201,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.availableNow" />
+        <item itemvalue="Python.concat" />
+        <item itemvalue="Python.focus_compare (1)" />
+        <item itemvalue="Python.mainTest" />
       </list>
     </recent_temporary>
   </component>
@@ -106,5 +224,51 @@
       <updated>1708696420723</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="dfb4290e-4f84-4fa5-857a-019d7d764995" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="dfb4290e-4f84-4fa5-857a-019d7d764995">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

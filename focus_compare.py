@@ -19,12 +19,12 @@ files_brand = [f for f in os.listdir(path_brand) if f.endswith('.xlsx') and f !=
 def disponibiliSubito(file_brand):
     shopify = pd.read_excel(os.path.join(path_brand, file_brand))
     shopify["Variant Barcode"] = shopify["Variant Barcode"].astype(str)
-    
+    shopify["Variant Barcode"] = shopify["Variant Barcode"].str.replace(".0", "")
     # merge
-    test = shopify.merge(focus[['Variant Barcode', 'Quantità magazzino']], on="Variant Barcode", how="left", indicator=True)
-    test["Inventory Available: +39 05649689443"] = test["Quantità magazzino"]
-    mask = test["_merge"] == "both"
-    check = test[mask]
+    check = shopify.merge(focus[['Variant Barcode', 'Quantità magazzino']], on="Variant Barcode", how="inner", indicator=True)
+    check["Inventory Available: +39 05649689443"] = check["Quantità magazzino"]
+    #mask = test["_merge"] == "both"
+    #check = test[mask]
 
     check = check[[
     "ID", "Handle", "Command", "Title", "Body HTML", "Vendor", "Type", "Tags", "Tags Command", "Created At",

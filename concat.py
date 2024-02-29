@@ -3,44 +3,37 @@ import pandas as pd
 path = "C:\\Users\\miche\\Desktop\\.py\\DisponibiliSubito\\FileOK\\"
 path1 = "C:\\Users\\miche\\Desktop\\myVenv\\Disponibili_Subito\\FileDisponibili"
 
-# concatenazione di tutti i file di Shopify
-# creazione del file finale di shopify da comparare a quello del Focus
-
 def concatFile():
-    adidas = pd.read_excel(path+"adidas_originals_ok.xlsx")
-    amq = pd.read_excel(path+"amq_ok.xlsx")
-    arnette = pd.read_excel(path+"arnette_ok.xlsx")
-    balenciga = pd.read_excel(path+"bale_ok.xlsx")
-    bottega = pd.read_excel(path+"bottega_ok.xlsx")
-    burberry = pd.read_excel(path+"burberry_ok.xlsx")
-    chloe = pd.read_excel(path+"chloe_ok.xlsx")
-    emporio = pd.read_excel(path+"emporio_armani_ok.xlsx")
-    giorgio = pd.read_excel(path+"giorgio_armani_ok.xlsx")
-    gucci = pd.read_excel(path+"gucci_ok.xlsx")
-    guess = pd.read_excel(path+"guess_ok.xlsx")
-    miu = pd.read_excel(path+"miumiu_ok.xlsx")
-    monlcer = pd.read_excel(path+"monlcer_ok.xlsx")
-    oakley = pd.read_excel(path+"oakley_ok.xlsx")
-    oakleySnow = pd.read_excel(path+"oakley_snow_ok.xlsx")
-    persol = pd.read_excel(path+"persol_ok.xlsx")
-    prada = pd.read_excel(path+"prada_ok.xlsx")
-    rayban = pd.read_excel(path+"rayban_ok.xlsx")
-    rudy = pd.read_excel(path+"rudy_project_ok.xlsx")
-    saintLaurent = pd.read_excel(path+"sl_ok.xlsx")
-    swarowski = pd.read_excel(path+"sk_ok.xlsx")
-    tiffany = pd.read_excel(path+"tiffany_ok.xlsx")
-    timberland = pd.read_excel(path+"tb_ok.xlsx")
-    tommy = pd.read_excel(path+"tommy_hilfiger_ok.xlsx")
-    versace = pd.read_excel(path+"versace_ok.xlsx")
-    vogue = pd.read_excel(path+"vogue_ok.xlsx")
+    # creo un lista con i nomi dei file dei brand
+    files = ["adidas_originals_ok.xlsx", "adidas_sport_ok.xlsx", "amq_ok.xlsx", "arnette_ok.xlsx",
+             "bale_ok.xlsx", "bottega_ok.xlsx", "burberry_ok.xlsx", "carrera_ok.xlsx", "chloe_ok.xlsx",
+             "david_beckham_ok.xlsx", "dolce_gabbana_ok.xlsx", "emporio_armani_ok.xlsx", "giorgio_armani_ok.xlsx",
+             "gucci_ok.xlsx", "guess_ok.xlsx", "kate_spade_ok.xlsx", "miumiu_ok.xlsx", "mj_ok.xlsx",
+             "monlcer_ok.xlsx", "mk_ok.xlsx", "oak_kids.xlsx", "oakley_ok.xlsx", "oakley_snow_ok.xlsx",
+             "pld_ok.xlsx", "persol_ok.xlsx", "prada_ok.xlsx", "plr_ok.xlsx", "rayban_ok.xlsx",
+             "rayban_kids_ok.xlsx", "rudy_project_ok.xlsx", "sl_ok.xlsx", "sk_ok.xlsx", "tiffany_ok.xlsx",
+             "tb_ok.xlsx", "ft_ok.xlsx", "tommy_hilfiger_ok.xlsx", "underAmor_ok.xlsx", "versace_ok.xlsx", "vogue_ok.xlsx"]
 
-    availablaNow = pd.concat([
-    adidas, amq, arnette, balenciga, bottega, burberry, chloe, emporio, giorgio, gucci,
-        guess, miu, monlcer, oakley, oakleySnow, persol, prada, rayban, rudy, saintLaurent,
-        swarowski, tiffany, timberland, tommy, versace, vogue
-    ])
-    availablaNow.to_excel("Concat_File.xlsx", index=False)
+    # creo lista vuota dove inserirò ogni dataframe per ogni brand
+    dataframes = []
+    for file in files:
+        try:
+            # creo un df per ogni brand concatenando il path al nome del file della lista
+            df = pd.read_excel(path + file)
+            # aggiungo il dataframe alla lista dataframes
+            dataframes.append(df)
+        except FileNotFoundError:
+            print(f"File not found: {file}")
+
+    if dataframes:
+        # se la lista dataframes ha al suo interno dei valori, concatena questi valori
+        availableNow = pd.concat(dataframes)
+        # salvo il file
+        availableNow.to_excel("Concat_File.xlsx", index=False)
+        print(f"File salvato nella directory {path1}")
+    else:
+        print("Nessun file da concatenare.")
+    return availableNow
 
 if __name__ == "__main__":
     concatFile()
-    print(f"File salvato nella directory {path1}")
