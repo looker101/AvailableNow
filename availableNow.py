@@ -13,6 +13,12 @@ def qty0(row):
     else:
         return row["Inventory Available: +39 05649689443"]
 
+def templateSuffix(row):
+    if row["Inventory Available: +39 05649689443"] == 0:
+        return "Default product"
+    else:
+        return "disponibili-subito"
+
 def finalFile():
     #brand_file[["Variant Inventory Qty", "Inventory Available: +39 05649689443"]] = 1
     brand_file["Template Suffix"] = "disponibili-subito"
@@ -27,7 +33,7 @@ def finalFile():
     # brand_file[["Variant Price", "Variant Compare At Price"]] = brand_file[["Variant Price", "Variant Compare At Price"]].astype("float64")
     # brand_file["Variant Price"] = brand_file["Variant Compare At Price"].apply(discount)
     brand_file["Inventory Available: +39 05649689443"] = brand_file.apply(qty0, axis = 1)
-
+    brand_file["Template Suffix"] = brand_file.apply(templateSuffix, axis = 1)
 
     brand_file.to_excel("AvailableNow.xlsx", index = False)
 
