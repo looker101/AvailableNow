@@ -1,14 +1,12 @@
 import pandas as pd
 # quantità a 5
 # template suffix = disponibili-subito
-
-brand_file = pd.read_excel("Concat_File.xlsx")
 focus = pd.read_excel("Disponibili_subito_Focus.xlsx")
 #print(brand_file.columns)
 
 # funzione per mettere in quantità 0 tutti i prodotti che hanno il prezzo a 9 euro
 def qty0(row):
-    if row["Variant Price"] == 9:
+    if row["Variant Price"] == 7:
         return 0
     else:
         return row["Inventory Available: +39 05649689443"]
@@ -20,6 +18,7 @@ def templateSuffix(row):
         return "disponibili-subito"
 
 def finalFile():
+    brand_file = pd.read_excel("Concat_File.xlsx")
     #brand_file[["Variant Inventory Qty", "Inventory Available: +39 05649689443"]] = 1
     brand_file["Template Suffix"] = "disponibili-subito"
     brand_file["Tags"] = brand_file["Tags"].apply(lambda x : x + ", available now")

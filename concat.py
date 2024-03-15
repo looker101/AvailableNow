@@ -1,7 +1,8 @@
 import pandas as pd
+import openpyxl
 
-path = "C:\\Users\\miche\\Desktop\\.py\\DisponibiliSubito\\FileOK\\"
-path1 = "C:\\Users\\miche\\Desktop\\myVenv\\Disponibili_Subito\\FileDisponibili"
+path = "C:\\Users\\miche\\Desktop\\.py\DisponibiliSubito\\FileOK\\"
+path1 = "C:\\Users\\miche\\Desktop\\.py\\DisponibiliSubito"
 
 def concatFile():
     # creo un lista con i nomi dei file dei brand
@@ -27,13 +28,13 @@ def concatFile():
 
     if dataframes:
         # se la lista dataframes ha al suo interno dei valori, concatena questi valori
-        availableNow = pd.concat(dataframes)
+        fileDisponibili = pd.concat(dataframes)
         # salvo il file
-        availableNow.to_excel("Concat_File.xlsx", index=False)
+        fileDisponibili.to_excel("Concat_File.xlsx", index=False)
         print(f"File salvato nella directory {path1}")
     else:
         print("Nessun file da concatenare.")
-    return availableNow
+    #return fileDisponibili
 
 if __name__ == "__main__":
     concatFile()

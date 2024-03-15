@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e294af16-7fd1-4c4a-9133-d9fe60dfd87c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/AvailableNow.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concat_File.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Disponibili_subito_Focus.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/availableNow.py" beforeDir="false" afterPath="$PROJECT_DIR$/availableNow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concat.py" beforeDir="false" afterPath="$PROJECT_DIR$/concat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/focus_compare.py" beforeDir="false" afterPath="$PROJECT_DIR$/focus_compare.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +48,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/miche/Desktop/.py/DisponibiliSubito"
   },
   "keyToStringList": {
@@ -54,7 +57,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Python.availableNow">
+  <component name="RunManager" selected="Python.main">
     <configuration name="availableNow" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DisponibiliSubito" />
       <option name="ENV_FILES" value="" />
@@ -143,6 +146,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DisponibiliSubito" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="mainTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DisponibiliSubito" />
       <option name="ENV_FILES" value="" />
@@ -167,6 +192,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.availableNow" />
         <item itemvalue="Python.concat" />
         <item itemvalue="Python.focus_compare (1)" />
@@ -177,7 +203,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-5a2391486177-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13763.11" />
+        <option value="bundled-python-sdk-d68999036c7f-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.14475.56" />
       </set>
     </attachedChunks>
   </component>

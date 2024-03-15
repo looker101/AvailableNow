@@ -34,11 +34,12 @@ def disponibiliSubito(file_brand):
     ]]
 
     # Salva il risultato nella cartella FileOK con lo stesso nome del file di origine
-    check.to_excel(os.path.join(path_ok, file_brand), index=False)
+    #check.to_excel(os.path.join(path_ok, file_brand), index=False)
 
-for file_brand in files_brand:
-    try:
-        disponibiliSubito(file_brand)
-        print(f"File {file_brand} salvato nella cartella \"FileOK\"")
-    except Exception as e:
-        print(f"Errore durante l'elaborazione del file {file_brand}: {e}")
+#if __name__ == "__main__":
+#    for file_brand in files_brand:
+#        try:
+#            disponibiliSubito(file_brand)
+#            print(f"File {file_brand} salvato nella cartella \"FileOK\"")
+#        except Exception as e:
+#            print(f"Errore durante l'elaborazione del file {file_brand}: {e}")
