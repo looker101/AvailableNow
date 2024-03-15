@@ -15,5 +15,6 @@
   
 + Verrà generato il file AvailableNow.xlsx che dovrà essere importato su Shopify attraverso Matrixify
 
-
-# File main.py. Eseguire per effettuare tutti i passaggi con un unico programma
+:alien:	:skier:	:climbing_man:	
+# File main.py. 
+Eseguire per effettuare tutti i passaggi con un unico programma
