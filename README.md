@@ -14,3 +14,6 @@
 + Il file availableNow aggiungerà anche il tag "available-now" ad ogni articolo.
   
 + Verrà generato il file AvailableNow.xlsx che dovrà essere importato su Shopify attraverso Matrixify
+
+
+# File main.py. Eseguire per effettuare tutti i passaggi con un unico programma
