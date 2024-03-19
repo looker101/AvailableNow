@@ -3,7 +3,7 @@ import os
 
 # Percorso della cartella dove sono situati i file dei brand e dove salvare i risultati
 path_brand = "C:\\Users\\miche\\Desktop\\.py\\DisponibiliSubito\\Brand\\"
-path_ok = "C:\\Users\\miche\\Desktop\\.py\\DisponibiliSubito\\FileOK\\"
+path_ok = "C:\\Users\\miche\\Desktop\\.py\\DisponibiliSubito\\FileOK"
 
 # Percorso del file Disponibili_subito_Focus.xlsx
 path_focus = "Disponibili_subito_Focus.xlsx"
@@ -34,7 +34,7 @@ def disponibiliSubito(file_brand):
     ]]
 
     # Salva il risultato nella cartella FileOK con lo stesso nome del file di origine
-    #check.to_excel(os.path.join(path_ok, file_brand), index=False)
+    check.to_excel(os.path.join(path_ok, file_brand), index=False)
 
 #if __name__ == "__main__":
 #    for file_brand in files_brand:

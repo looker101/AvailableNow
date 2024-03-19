@@ -36,6 +36,6 @@ def finalFile():
 
     brand_file.to_excel("AvailableNow.xlsx", index = False)
 
-if __name__ == "__main__":
-    finalFile()
-    print("Il file è stato salvato correttamente!")
+#if __name__ == "__main__":
+#    finalFile()
+#    print("Il file è stato salvato correttamente!")

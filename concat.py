@@ -1,10 +1,13 @@
 import pandas as pd
 import openpyxl
 
-path = "C:\\Users\\miche\\Desktop\\.py\DisponibiliSubito\\FileOK\\"
+path = "C:\\Users\\miche\\Desktop\\.py\\DisponibiliSubito\\FileOK\\"
 path1 = "C:\\Users\\miche\\Desktop\\.py\\DisponibiliSubito"
 
 def concatFile():
+    fileDisponibili = pd.DataFrame()
+    global path
+    global path1
     # creo un lista con i nomi dei file dei brand
     files = ["adidas_originals_ok.xlsx", "adidas_sport_ok.xlsx", "amq_ok.xlsx", "arnette_ok.xlsx",
              "bale_ok.xlsx", "bottega_ok.xlsx", "burberry_ok.xlsx", "carrera_ok.xlsx", "chloe_ok.xlsx",
@@ -34,7 +37,8 @@ def concatFile():
         print(f"File salvato nella directory {path1}")
     else:
         print("Nessun file da concatenare.")
-    #return fileDisponibili
 
-if __name__ == "__main__":
-    concatFile()
+    return fileDisponibili
+
+#if __name__ == "__main__":
+#   concatFile()
