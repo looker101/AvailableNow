@@ -21,4 +21,4 @@
 
 ## File `main.py`
 
-Esegui questo script per completare tutti i passaggi sopra elencati tramite un unico programma.
+Esegui questo script per eseguire tutte le operazioni.
